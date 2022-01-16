@@ -3,7 +3,7 @@ export const Square = (props) => {
     <button
       className='square'
       index={props.value}
-      onClick={() => props.onClick()}
+      onClick={props.onClick}
     >
       {props.value}
     </button>
