@@ -11,7 +11,6 @@ export const Game = () => {
   const winner = calculateWinner(current.squares);
 
   const handleClick = (i) => {
-    console.log(`Pressed ${i} button`);
     const currentHistory = history.slice(0, stepNumber + 1);
     const current = currentHistory[currentHistory.length - 1];
     const squares = current.squares.slice();
