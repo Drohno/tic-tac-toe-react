@@ -1,11 +1,8 @@
 export const Square = (props) => {
+  const { onClick, value } = props;
   return (
-    <button
-      className='square'
-      index={props.value}
-      onClick={props.onClick}
-    >
-      {props.value}
+    <button className='square' onClick={onClick}>
+      {value}
     </button>
   );
 };
