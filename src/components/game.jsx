@@ -39,9 +39,9 @@ export const Game = () => {
 
   let status;
   if (winner) {
-    status = 'Winner: ' + winner;
+    status = `🥳🥳 Winner: ${winner} 🥳🥳`;
   } else {
-    status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+    status = `It is ${xIsNext ? 'X' : 'O'} turn`;
   }
 
   return (
